@@ -1,9 +1,13 @@
 package topping;
 
-public class Anchovy implements Topping {
+public class Anchovy extends ToppingDecorator {
+
+    public Anchovy(Topping topping) {
+        super(topping);
+    }
 
     @Override
     public String addTopping() {
-        return "Anchovy";
+        return super.addTopping() + " Anchovy";
     }
 }

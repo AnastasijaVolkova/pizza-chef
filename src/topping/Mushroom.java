@@ -1,9 +1,13 @@
 package topping;
 
-public class Mushroom implements Topping {
+public class Mushroom extends ToppingDecorator {
+
+    public Mushroom(Topping topping) {
+        super(topping);
+    }
 
     @Override
     public String addTopping() {
-        return "Mushroom";
+        return super.addTopping() + " Mushroom";
     }
 }

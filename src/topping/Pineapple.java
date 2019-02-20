@@ -1,9 +1,13 @@
 package topping;
 
-public class Pineapple implements Topping {
+public class Pineapple extends ToppingDecorator {
+
+    public Pineapple(Topping topping) {
+        super(topping);
+    }
 
     @Override
     public String addTopping() {
-        return "Pineapple";
+        return topping.addTopping() + " Pineapple";
     }
 }

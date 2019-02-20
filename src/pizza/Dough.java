@@ -1,3 +1,5 @@
+package pizza;
+
 public class Dough {
 
     private boolean thin;

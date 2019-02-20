@@ -1,9 +1,13 @@
 package topping;
 
-public class BlackOlive implements Topping {
+public class BlackOlive extends ToppingDecorator {
+
+    public BlackOlive(Topping topping) {
+        super(topping);
+    }
 
     @Override
     public String addTopping() {
-        return "Black olive";
+        return super.addTopping() + " Black olive";
     }
 }

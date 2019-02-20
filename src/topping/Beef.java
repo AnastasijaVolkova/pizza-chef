@@ -1,8 +1,12 @@
 package topping;
 
-public class Beef implements Topping {
+public class Beef extends ToppingDecorator {
+    public Beef(Topping topping) {
+        super(topping);
+    }
+
     @Override
     public String addTopping() {
-       return "Beef";
+        return super.addTopping() + " Beef";
     }
 }

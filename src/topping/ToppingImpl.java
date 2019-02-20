@@ -1,9 +1,8 @@
 package topping;
 
-public class Pepperoni implements Topping {
-
+public class ToppingImpl implements Topping {
     @Override
     public String addTopping() {
-        return "Pepperoni";
+        return "";
     }
 }

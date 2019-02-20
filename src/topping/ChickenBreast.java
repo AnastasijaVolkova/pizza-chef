@@ -1,8 +1,13 @@
 package topping;
 
-public class ChickenBreast implements Topping {
+public class ChickenBreast extends ToppingDecorator {
+
+    public ChickenBreast(Topping topping) {
+        super(topping);
+    }
+
     @Override
     public String addTopping() {
-        return "Chicken breast";
+        return super.addTopping() + " Chicken breast";
     }
 }
