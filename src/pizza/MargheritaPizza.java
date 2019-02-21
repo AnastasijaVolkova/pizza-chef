@@ -1,15 +1,16 @@
 package pizza;
 
+import sauce.Sauce;
 import topping.Topping;
 
 public class MargheritaPizza extends PizzaBase implements Pizza {
 
-    public MargheritaPizza(Dough dough, Souce souce, Topping topping) {
-        super(dough, souce, topping);
+    public MargheritaPizza(Dough dough, Sauce sauce, Topping topping) {
+        super(dough, sauce, topping);
     }
 
     @Override
-    public String bakePizza() {
+    public String getWonderfulPizza() {
         return "Margherita pizza ";
     }
 }

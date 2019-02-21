@@ -1,16 +1,17 @@
 package pizza;
 
+import sauce.Sauce;
 import topping.Topping;
 
 public abstract class PizzaBase {
 
     private Dough dough;
-    private Souce souce;
+    private Sauce sauce;
     private Topping topping;
 
-    public PizzaBase(Dough dough, Souce souce, Topping topping) {
+    public PizzaBase(Dough dough, Sauce sauce, Topping topping) {
         this.dough = dough;
-        this.souce = souce;
+        this.sauce = sauce;
         this.topping = topping;
     }
 
@@ -22,12 +23,12 @@ public abstract class PizzaBase {
         this.dough = dough;
     }
 
-    public Souce getSouce() {
-        return souce;
+    public Sauce getSauce() {
+        return sauce;
     }
 
-    public void setSouce(Souce souce) {
-        this.souce = souce;
+    public void setSauce(Sauce sauce) {
+        this.sauce = sauce;
     }
 
     public Topping getTopping() {

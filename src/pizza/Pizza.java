@@ -2,5 +2,5 @@ package pizza;
 
 public interface Pizza {
 
-    String bakePizza();
+    String getWonderfulPizza();
 }
