@@ -11,6 +11,6 @@ public class SicilianPizza extends PizzaBase implements Pizza {
 
     @Override
     public String getWonderfulPizza() {
-        return "Sicilian pizza ";
+        return "Sicilian pizza " + (getSauce() == null ? "without delicious sauce" : "with best sauce in your life");
     }
 }

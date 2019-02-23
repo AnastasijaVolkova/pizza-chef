@@ -1,5 +1,8 @@
 package topping;
 
+/*
+ * Class that is used to interpret Decorator pattern
+ * */
 public abstract class ToppingDecorator implements Topping {
     protected Topping topping;
 

@@ -1,6 +1,7 @@
 package topping;
 
-public class ToppingImpl implements Topping {
+public class EmptyTopping implements Topping {
+
     @Override
     public String addTopping() {
         return "";

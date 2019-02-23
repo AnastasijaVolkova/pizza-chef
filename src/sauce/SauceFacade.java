@@ -1,5 +1,8 @@
 package sauce;
 
+/*
+ * Class that is used to interpret Facade pattern
+ * */
 public class SauceFacade {
 
     private final Garlic garlic;
